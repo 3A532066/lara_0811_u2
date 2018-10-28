@@ -11,8 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return 'welcome';
+Route::get('hello/{name}', function ($name) {
+    return 'Hello, '.$name;
 });
 
 Route::get('/', function () {
@@ -22,3 +22,5 @@ Route::get('/', function () {
 Route::get('/', function () {
     return redirect('welcome');
 });
+
+
