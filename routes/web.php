@@ -19,8 +19,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/', function () {
-    return redirect('welcome');
+Route::get('dashboard', function () {
+    return 'dashboard';
 });
 
 
