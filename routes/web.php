@@ -18,7 +18,7 @@ Route::get('say/{name?}',['as' => 'hello.index', function ($name = 'Everybody') 
     return 'Hello, '.$name;
 }]);
 
-Route::get('/', function () {
+Route::get('welcome', function () {
     return view('welcome');
 });
 
